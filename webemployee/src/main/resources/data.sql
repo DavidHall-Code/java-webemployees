@@ -2,9 +2,9 @@ DELETE
 FROM employees;
 
 INSERT INTO employees(empid, fname, lname, salary)
-     VALUES (1, 'Steve', 'Green', 45000),
-            (2, 'Sam', 'Ford', 80000),
-            (3, 'May', 'Jones', 75000);
+VALUES (1, 'Steve', 'Green', 45000),
+       (2, 'Sam', 'Ford', 80000),
+       (3, 'May', 'Jones', 75000);
 
 /*
 We must tell hibernate the ids that have already been used.

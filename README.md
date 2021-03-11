@@ -2,7 +2,8 @@
 
 ## Introduction
 
-The purpose of this application is to show how to use Maven, Spring, and Tomcat together to produce a functioning Rest API Backend system. This system makes use of an H2 database.
+The purpose of this application is to show how to use Maven, Spring, and Tomcat together to produce a functioning Rest
+API Backend system. This system makes use of an H2 database.
 
 ## Data Layout
 
@@ -17,7 +18,8 @@ Fields of the employee objects include
 
 No relationships exist between employee and other objects.
 
-Using the provided seed data, the given endpoint will produce the stated output. Expand each endpoint to see its correct output.
+Using the provided seed data, the given endpoint will produce the stated output. Expand each endpoint to see its correct
+output.
 
 <details>
 <summary>http://localhost:2019/employees/all</summary>

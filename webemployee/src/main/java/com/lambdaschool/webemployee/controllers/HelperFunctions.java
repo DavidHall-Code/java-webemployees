@@ -17,5 +17,5 @@ public interface HelperFunctions
      * @param tester a Lambda Expression giving the criteria for which objects we seek
      * @return the filtered list!
      */
-    List<Employee> findEmployees (List<Employee> myList, CheckEmployee tester);
+    List<Employee> findEmployees(List<Employee> myList, CheckEmployee tester);
 }

@@ -10,7 +10,7 @@ import java.util.List;
 public class HelperFunctionsImpl implements HelperFunctions
 {
     @Override
-    public List<Employee> findEmployees (List<Employee> myList, CheckEmployee tester)
+    public List<Employee> findEmployees(List<Employee> myList, CheckEmployee tester)
     {
         List<Employee> tempList = new ArrayList<>();
 

@@ -37,7 +37,7 @@ public class EmployeeController
      * @return JSON list of all employees order alphabetically by last name with a status of OK.
      */
     @GetMapping(value = "/employees/all",
-    produces = {"application/json"})
+            produces = {"application/json"})
     public ResponseEntity<?> listAllEmployees()
     {
         List<Employee> myList = new ArrayList<>();
@@ -55,12 +55,12 @@ public class EmployeeController
      * @return JSON list of the employees you seek with a status of OK
      */
     @GetMapping(value = "/employees/name/{letter}",
-    produces = "application/json")
+            produces = "application/json")
     public ResponseEntity<?> listAllByFirstName(@PathVariable char letter)
     {
         List<Employee> myList = new ArrayList<>();
         emprepos.findAll().iterator().forEachRemaining(myList::add);
-        List<Employee> rtnList = helperFunctions.findEmployees(myList, e-> e.getFname().charAt(0) == letter);
+        List<Employee> rtnList = helperFunctions.findEmployees(myList, e -> e.getFname().charAt(0) == letter);
 
         // print to the console
         for (Employee e : rtnList)
@@ -78,7 +78,7 @@ public class EmployeeController
      * @return Status of OK
      */
     @GetMapping(value = "/employees/total",
-    produces = {"application/json"})
+            produces = {"application/json"})
     public ResponseEntity<?> totalSalary()
     {
         List<Employee> myList = new ArrayList<>();
@@ -105,7 +105,6 @@ public class EmployeeController
      *              Special code must in place for a route to work with a real number.
      *              The parameter must be able to read in a decimal. By default it cannot.
      *              So :.+ is added to the end of the parameter in the GetMapping annotation!
-     *
      * @return A JSON list of all employees with their estimate salaries based on the given raise percentage.
      */
     @GetMapping(value = "/employees/raise/{raise:.+}",
